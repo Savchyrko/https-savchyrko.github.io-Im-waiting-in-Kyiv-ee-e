@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для самой красивой девочки 💜</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #330033, #660066, #9900cc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #f3e6ff;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Звезды */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    header {
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #ffccff;
+      text-shadow: 0 0 15px #cc00ff, 0 0 30px #9900cc;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff33cc, 0 0 20px #cc00ff; }
+      to { text-shadow: 0 0 20px #ff66ff, 0 0 40px #cc00ff; }
+    }
+
+    .photo-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .photo-item {
+      width: 160px;
+    }
+
+    .photo-item img {
+      width: 100%;
+      border-radius: 50%;
+      border: 3px solid #e0b3ff;
+      box-shadow: 0 0 20px rgba(204,0,255,0.8);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .photo-item img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px rgba(255, 51, 204, 1);
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #ffccff;
+      text-shadow: 0 0 8px #9900cc;
+      font-weight: bold;
+    }
+
+    .poem {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      max-width: 600px;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      background: rgba(30,0,40,0.6);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(153,0,204,0.7);
+      font-style: italic;
+    }
+
+    .spotify-embed {
+      margin-top: 2rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(0,0,0,0.8);
+      color: #d9b3ff;
+      border-top: 2px solid #660066;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 20px rgba(153,0,204,0.8);
+    }
+
+    /* Сердечки */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff33cc;
+      transform: rotate(45deg);
+      animation: float 12s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: inherit;
+      border-radius: 50%;
+    }
+
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { left: -10px; top: 0; }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(45deg); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) rotate(45deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Звезды -->
+<div class="stars">
+  <div class="star" style="top:10%; left:15%; animation-duration:2s;"></div>
+  <div class="star" style="top:20%; left:70%; animation-duration:3s;"></div>
+  <div class="star" style="top:40%; left:50%; animation-duration:4s;"></div>
+  <div class="star" style="top:60%; left:30%; animation-duration:5s;"></div>
+  <div class="star" style="top:80%; left:80%; animation-duration:2.5s;"></div>
+  <div class="star" style="top:35%; left:90%; animation-duration:3.5s;"></div>
+</div>
+
+<header>
+  <h1>Для самой красивой девочки 💜🖤</h1>
+</header>
+
+<div class="photo-row">
+  <div class="photo-item">
+    <img src="552709529_1327815905738012_2172240309229276875_n.jpg" alt="Фото 1">
+    <div class="caption">Ты сияешь ✨</div>
+  </div>
+  <div class="photo-item">
+    <img src="552213773_843746461555501_5665694653650163629_n.jpg" alt="Фото 2">
+    <div class="caption">Моя звезда 🌌</div>
+  </div>
+ 
+</div>
+
+<div class="poem">
+  Даже в темноте ты ярче луны,<br>
+  твоя улыбка – это свет,<br>
+  ты — будто космос, и вселенная,<br>
+ 💜
+</div>
+
+<div class="spotify-embed">
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/4SqWKzw0CbA05TGszDgMlc?utm_source=generator&theme=0"
+    width="100%" height="152" frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+</div>
+
+<footer>
+  &copy; 2025 Только для тебя 💜
+</footer>
+
+<!-- Сердечки -->
+<div class="heart" style="left:10%; animation-duration:14s;"></div>
+<div class="heart" style="left:30%; animation-duration:10s;"></div>
+<div class="heart" style="left:50%; animation-duration:16s;"></div>
+<div class="heart" style="left:70%; animation-duration:12s;"></div>
+<div class="heart" style="left:90%; animation-duration:18s;"></div>
+
+</body>
+</html>
+<style>
+  /* Пелюстки троянд */
+  .petal {
+    position: fixed;
+    top: -10%;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 30% 30%, #ff99cc, #cc0066);
+    border-radius: 50% 50% 50% 50%;
+    opacity: 0.8;
+    animation: fall 12s linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(-10%) rotate(0deg); opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+  }
+
+  /* Романтичне повідомлення */
+  .love-message {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 51, 153, 0.9);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 20px rgba(255, 102, 204, 0.8);
+    animation: slideUp 5s ease forwards 2s;
+  }
+
+  @keyframes slideUp {
+    0% { bottom: -100px; opacity: 0; }
+    100% { bottom: 30px; opacity: 1; }
+  }
+
+  /* Сяйво навколо вірша */
+  .poem {
+    animation: glowBox 3s infinite alternate;
+  }
+
+  @keyframes glowBox {
+    from { box-shadow: 0 0 15px rgba(255, 153, 255, 0.4); }
+    to { box-shadow: 0 0 30px rgba(255, 51, 204, 0.9); }
+  }
+</style>
+
+<!-- Пелюстки -->
+<div class="petal" style="left:10%; animation-duration:14s;"></div>
+<div class="petal" style="left:30%; animation-duration:18s;"></div>
+<div class="petal" style="left:50%; animation-duration:16s;"></div>
+<div class="petal" style="left:70%; animation-duration:20s;"></div>
+<div class="petal" style="left:85%; animation-duration:15s;"></div>
+
+<!-- Романтичне повідомлення -->
+<div class="love-message">
+  💌 Знай ты достойна большего не ведись на всяких додиков 💜
+</div>
